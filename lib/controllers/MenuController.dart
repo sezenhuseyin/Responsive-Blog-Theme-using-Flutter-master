@@ -13,19 +13,17 @@ class MenuController extends GetxController {
   GlobalKey<ScaffoldState> get scaffoldkey => _scaffoldKey;
 
   void openOrCloseDrawer() {
-    if (_scaffoldKey.currentState.isDrawerOpen) {
-      _scaffoldKey.currentState.openEndDrawer();
+    if (_scaffoldKey.currentState!.isDrawerOpen) {
+      _scaffoldKey.currentState!.openEndDrawer();
     } else {
-      _scaffoldKey.currentState.openDrawer();
+      _scaffoldKey.currentState!.openDrawer();
     }
   }
 
-  void setMenuIndex(int index)
-  {
+  void setMenuIndex(int index) {
     _selectedIndex.value = index;
-    if(_selectedIndex.value == 1){
+    if (_selectedIndex.value == 1) {
       Get.to(ContactUs());
     }
-
   }
 }

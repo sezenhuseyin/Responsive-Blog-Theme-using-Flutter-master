@@ -1,12 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter/material.dart' hide MenuController;
+import 'package:get/get.dart' ;
 import 'package:news/controllers/MenuController.dart';
 
 import '../../../constants.dart';
 
 class WebMenu extends StatelessWidget {
-  final MenuController _controller = Get.put(MenuController());
-
+  MenuController _controller = MenuController();
   @override
   Widget build(BuildContext context) {
     return Obx(
@@ -25,12 +24,11 @@ class WebMenu extends StatelessWidget {
 }
 
 class WebMenuItem extends StatefulWidget {
-  const WebMenuItem({
-    Key key,
-    @required this.isActive,
-    @required this.text,
-    @required this.press,
-  }) : super(key: key);
+  const WebMenuItem({ 
+    required this.isActive,
+    required this.text,
+    required this.press,
+  }) ;
 
   final bool isActive;
   final String text;

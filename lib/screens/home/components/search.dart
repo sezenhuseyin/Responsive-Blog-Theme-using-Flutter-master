@@ -5,10 +5,6 @@ import '../../../constants.dart';
 import 'sidebar_container.dart';
 
 class Search extends StatelessWidget {
-  const Search({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return SidebarContainer(

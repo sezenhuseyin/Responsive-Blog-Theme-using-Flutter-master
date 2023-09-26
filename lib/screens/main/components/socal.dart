@@ -5,10 +5,6 @@ import '../../../constants.dart';
 import '../../../responsive.dart';
 
 class Socal extends StatelessWidget {
-  const Socal({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Row(

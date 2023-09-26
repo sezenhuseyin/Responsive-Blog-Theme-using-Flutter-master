@@ -1,7 +1,11 @@
 class Blog {
   final String date, title, description, image;
 
-  Blog({this.date, this.title, this.description, this.image});
+  Blog(
+      {required this.date,
+      required this.title,
+      required this.description,
+      required this.image});
 }
 
 List<Blog> blogPosts = [

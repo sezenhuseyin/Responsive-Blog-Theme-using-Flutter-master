@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide MenuController;
 import 'package:get/get.dart';
 import 'package:news/controllers/MenuController.dart';
 import 'package:news/screens/home/home_screen.dart';

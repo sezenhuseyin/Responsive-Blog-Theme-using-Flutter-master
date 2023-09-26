@@ -8,9 +8,8 @@ import '../../../constants.dart';
 class BlogPostCard extends StatelessWidget {
   final Blog blog;
   const BlogPostCard({
-    Key key,
-    @required this.blog,
-  }) : super(key: key);
+    required this.blog,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide MenuController;
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:news/controllers/MenuController.dart';
@@ -47,11 +47,10 @@ class DrawerItem extends StatelessWidget {
   final VoidCallback press;
 
   const DrawerItem({
-    Key key,
-    @required this.title,
-    @required this.isActive,
-    @required this.press,
-  }) : super(key: key);
+    required this.title,
+    required this.isActive,
+    required this.press,
+  });
 
   @override
   Widget build(BuildContext context) {

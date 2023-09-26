@@ -4,10 +4,6 @@ import '../../../constants.dart';
 import 'sidebar_container.dart';
 
 class RecentPosts extends StatelessWidget {
-  const RecentPosts({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return SidebarContainer(
@@ -36,11 +32,10 @@ class RecentPostCard extends StatelessWidget {
   final VoidCallback press;
 
   const RecentPostCard({
-    Key key,
-    @required this.image,
-    @required this.title,
-    @required this.press,
-  }) : super(key: key);
+    required this.image,
+    required this.title,
+    required this.press,
+  });
 
   @override
   Widget build(BuildContext context) {
