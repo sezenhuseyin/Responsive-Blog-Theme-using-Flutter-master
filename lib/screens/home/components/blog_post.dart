@@ -27,7 +27,7 @@ class BlogPostCard extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10),
-                bottomRight: Radius.circular(10),
+                bottomRight: Radius.circular(10), 
               ),
             ),
             child: Column(
